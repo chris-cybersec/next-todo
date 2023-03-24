@@ -1,0 +1,13 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+@use '_Gradients.module.scss' as *;
+
+.rootContainer{
+    @include rootGradientBg;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @include gridCenter;
+    min-height: 100vh;
+    color: $font-Clr;
+}

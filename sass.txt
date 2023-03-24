@@ -1,0 +1,2 @@
+sass --watch app/styles/modules:app/styles/min --style=compressed --no-source-map
+

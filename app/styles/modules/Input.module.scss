@@ -1,0 +1,31 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+
+.container{
+    @include flexColumn;
+    input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: $font-Clr;
+        padding: .5rem;
+        background-color: $clr1;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        &::placeholder{
+            color: rgb(127, 127, 127);
+            font-size: .8rem;
+        }
+}
+    .plus{
+        text-align: center;
+        font-size: 2.5rem;
+        color: aqua;
+        margin-block-start: 1rem;
+    }
+}

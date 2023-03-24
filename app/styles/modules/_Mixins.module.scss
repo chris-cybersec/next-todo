@@ -1,0 +1,44 @@
+// Default Mixins
+
+@mixin mInline {
+    margin-inline: auto;
+}
+  
+  @mixin gridCenter {
+    display: grid;
+    place-items: center;
+  }
+  
+  @mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @mixin borderNone {
+    outline: 1px solid transparent;
+  }
+  
+  @mixin borderWhite {
+    outline: 1px solid $white;
+  }
+  
+  @mixin borderRed {
+    outline: 1px solid red;
+  }
+  
+  @mixin borderPink {
+    outline: 1px solid pink;
+  }
+  
+  @mixin borderBlue {
+    outline: 1px solid rgb(27, 27, 246);
+  }
+  
+  @mixin borderGreen {
+    outline: 1px solid rgb(13, 223, 48);
+  }

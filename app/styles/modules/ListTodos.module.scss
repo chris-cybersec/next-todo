@@ -1,0 +1,49 @@
+@use '_Variables.module.scss' as *;
+@use '_Mixins.module.scss' as *;
+
+.container{
+    @include flexColumn;
+    align-items: center;
+    gap: .5rem;
+    padding-inline: .5rem;
+    padding-block: .5rem;
+    background-color: $clr1;
+    width: 18rem;
+    height: 13rem;
+    overflow-y: scroll;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    .ListTodosContainer{
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $clr2;
+        width: calc(100% - 4rem);
+        font-size: .8rem;
+        padding-inline: 1rem;
+        .icon{
+            @include flexRow;
+            align-items: center;
+            justify-content: space-around;
+            width: 4rem;
+            background-color: $clr0;
+            font-size: 1.1rem;
+            padding-block: .2rem;
+            border-radius: 1px;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
+            cursor: pointer;
+            .completed{
+                color: aqua;
+            }
+            .delete{
+                color: rgb(239, 54, 140);
+            }
+}
+    }
+}
